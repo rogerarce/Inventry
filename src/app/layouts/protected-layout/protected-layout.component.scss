@@ -1,0 +1,129 @@
+:host {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+
+    .site-sidebar {
+        width: 100%;
+        border-right: 1px solid #ddd;
+        background-color: #707074;
+        color: #BFD6E4;
+    }
+
+    .navigation-header {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px;
+    }
+
+    .navigation-body {
+        margin: 4rem 0;
+    }
+
+    .sidebar-logo {
+        display: block;
+        width: 108px;
+        height: 34px;
+        margin: 33px auto 14px;
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgogICB2aWV3Qm94PSIwIDAgMzA5LjQwOCA5Ny42MjEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMwOS40MDggOTcuNjIxIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+CiAgPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTI0NC4wNjUsNzMuNzkyVjQuNTU2aDEyLjc5djY5LjIzNkgyNDQuMDY1eiIvPgogIDxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yNjIuMTkzLDI2Ljk2MWgxMy42NTVsMTAuMzg1LDMwLjg2OGgwLjQ4MWw5LjUyLTMwLjg2OGgxMy4xNzRMMjkwLjA4LDc4Ljc5MgogICAgYy00LjEzNSwxMS4wNTktOS4wMzksMTcuNTAyLTIxLjgyOCwxNy41MDJjLTMuOTQzLDAtNi4yNTEtMC41NzctNy4yMTMtMC44NjZsMS44MjctMTAuMDk3YzAuNjc0LDAuMTkyLDEuNzMxLDAuNDgxLDQuNTIsMC40ODEKICAgIGM2LjUzOSwwLDguODQ3LTMuMTc0LDEwLjY3NC04LjE3NGwxLjczMi00LjgwOUwyNjIuMTkzLDI2Ljk2MXoiLz4KPC9nPgo8Zz4KICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNODcuOTg5LDY1LjQyNmM2LjM0NywwLDkuOTA0LTIuMTE1LDEyLjIxMy0zLjI2OWw0LjEzNSw4LjI3MWMtMy4wNzcsMS43My03Ljg4Niw0LjUxOS0xNy41MDEsNC41MTkKICAgIGMtMTUuNjc1LDAtMjQuNTIxLTkuOTA1LTI0LjUyMS0yNC44MWMwLTE0LjgwOSwxMC4xOTMtMjQuMzI5LDIzLjE3NS0yNC4zMjljMTQuNjE2LDAsMjEuNzMyLDEwLjE5MywyMC4xOTMsMjcuNTAySDc1Ljk3CiAgICBDNzYuNTQ2LDYwLjUyMSw4MC4yLDY1LjQyNiw4Ny45ODksNjUuNDI2eiBNOTMuMzc0LDQ0LjY1NWMtMC4wOTYtNS4yODktMi4yMTEtOS42MTYtOC4wNzctOS42MTZjLTUuMzg1LDAtOC40NjIsMy40NjItOS4zMjcsOS42MTYKICAgIEg5My4zNzR6Ii8+CiAgPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEzNC42NzgsNzQuOTQ2Yy0xNS4wMDEsMC0yNC4yMzItMTAuMDAxLTI0LjIzMi0yNC41MjFjMC0xNS43NzEsMTAuNDgxLTI0LjYxNywyNC42MTctMjQuNjE3CiAgICBjNy41OTcsMCwxMi4xMTYsMi4zMDgsMTQuMzI4LDMuNzVsLTQuMTM1LDguNzUxYy0yLjExNi0xLjM0Ni01LjA5Ny0yLjc4OS05LjgwOS0yLjc4OWMtNy41MDEsMC0xMS40NDMsNS44NjYtMTEuNDQzLDE0LjUyCiAgICBzMy43NSwxNS4wMDEsMTEuNzMxLDE1LjAwMWM1LjM4NiwwLDguNjU1LTIuMDE5LDEwLjA5OC0yLjg4NWwzLjk0Miw4LjU1OUMxNDcuNTYzLDcyLjE1NywxNDMuMjM2LDc0Ljk0NiwxMzQuNjc4LDc0Ljk0NnoiLz4KICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTY4LjUyOCwyNi45NjF2MzAuMTk1YzAsNC43MTIsMS42MzUsNy4xMTYsNi4yNSw3LjExNmM0LjkwNCwwLDguNjU1LTQuNzEyLDkuNjE2LTUuODY2VjI2Ljk2MWgxMi43OQogICAgdjMzLjM2OGMwLDUuOTYyLDAuNjczLDEwLjY3NCwxLjI1LDEzLjQ2M2gtMTIuNTk4Yy0wLjM4NS0xLjI1LTAuODY1LTQuMzI3LTAuOTYxLTYuMjVjLTIuNTAxLDMuMTczLTcuMzA5LDcuNDA0LTE1LjA5OCw3LjQwNAogICAgYy0xMC4yODksMC0xNC4wMzktNi42MzYtMTQuMDM5LTE1LjE5M1YyNi45NjFIMTY4LjUyOHoiLz4KICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjM1LjEzLDM4LjIxMmMtMC43NjgtMC40ODEtMi4yMTEtMS4wNTgtNC45MDQtMS4wNThjLTUuNjczLDAtOS4wMzksNS0xMC4xOTIsNy4xMTZ2MjkuNTIxaC0xMi43OVYyNi45NjEKICAgIGgxMi43OXY2LjM0N2MyLjAyLTMuNDYxLDUuODY1LTcuNTAxLDExLjgyNy03LjUwMWMzLjQ2MiwwLDUuMjg5LDAuNjczLDYuMzQ3LDEuMjVMMjM1LjEzLDM4LjIxMnoiLz4KICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNDcuNTQyLDUzLjM1MmMtMy43NzYtNS44NzMtNi4yOTUtOC42LTguMTgyLTkuOTYzdi0wLjIxMWM4LjQ5Ni0xLjU3MiwxNi4yMTctNy41MDgsMTYuNzIxLTE5LjM2MwogICAgQzU2LjU5NCwxMS44MDMsNDkuOTgzLDEsMzEuNDQsMUMxMi40OTQsMSw2LjYzMSw5LjU1Nyw2LjYzMSwyMC45NzVIMGwxNC4wMTEsMTEuNzA5bDEzLjc3LTExLjcwOWgtOC4wNDQKICAgIGMwLjAxLTUuNTE2LDIuODM1LTguMzY1LDExLjg2My04LjM2NWM4LjU0NywwLDEwLjY3OCw0LjY3NCwxMC42NzgsMTEuMTQxYzAsNi40MjItNS4wMTYsMTEuNjI1LTEyLjg4MywxMS42MjVINi41Mjl2MzguNzQ2aDEzLjcwOAogICAgdi0yOC43NGgyLjAyNWMzLjI1MiwwLDUuNDg2LDAuNzM0LDEwLjk0MSw4LjgxTDQ2LDc0LjEyMWgxNS4xNzhMNDcuNTQyLDUzLjM1MnoiLz4KPC9nPgo8L3N2Zz4K)
+    }
+    
+    .sidebar-padded {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            width: 100%;
+            height: 55px;
+            padding: 10px 24px;
+            cursor: pointer;
+    
+            a {
+                color: #BFD6E4;
+            }
+        }
+    }
+
+    header {
+        height: 5.5rem;
+        background-color: #FFFFFF;
+    }
+
+    .site-bodywrapper {
+        display: grid;
+        grid-template-rows: 2.5rem 5.5rem 1fr;
+        overflow-y: scroll;
+    }
+
+    .site-banner, .site-head {
+        background-color: #FFFFFF;
+        padding: 15px 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    .site-banner {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #e8e8e9;
+        font-size: 13px;
+        color: #8C8C91;
+    }
+
+    .breadcrumbs-list {
+        float: left;
+
+        .breadcrumbs {
+            max-width: 50em;
+            color: #8c8c91;
+            display: inline-block;
+            vertical-align: middle;
+    
+            + .breadcrumbs {
+                padding-left: 5px;
+    
+                &::before {
+                    content: ">";
+                    font-size: 10px;
+                    color: #ddd;
+                    padding-right: 5px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .account-items {
+        float: right;
+
+        .account-item {
+            display: inline-block;
+            vertical-align: middle;
+
+            + .account-item {
+                padding-left: 5px;
+
+                &::before {
+                    color: #8c8c91;
+                    padding: 0 4px;
+                    content: "\2022";
+                }
+            }
+        }
+    }
+
+    .site-head {
+        box-shadow: 0 1px 0 0 #e8e8e9;
+        color: #3D3F3e;
+    }
+}

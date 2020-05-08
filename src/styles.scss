@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Variable Overrides
+$primary: #3282b8;
+$danger: #9d2503;
+$default: #F3F3F4;
+$gray: #e8e8e9;
+$dark-gray: #707074;
+
+// Default Override
+$border-radius: .15rem;
+$border-width: 1px;
+
+// Enables
+$enable-shadows: true;
+$enable-grid-classes: true;
+
+// Table Override
+$table-cell-padding: .50rem;
+
+// Card Override
+$card-spacer-y: .55rem !default;
+$card-spacer-x: .80rem !default;
+
+// Breadcrumb Override
+$breadcrumb-divider: quote(">");
+
+// General Rule Override
+$body-bg: #F3F3F4;
+$body-color: #111;
+$font-size-base: .87rem;
+
+$theme-colors: (
+    "default": $default,
+    "primary": $primary,
+    "danger": $danger,
+    "gray": $gray,
+    "dark-gray": $dark-gray,
+);
+
+thead th {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
