@@ -5,7 +5,8 @@ import { ProductsRouterModule } from './products-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ProductsFilterComponent } from './components/products-filter/products-filter.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
-
+import { StoreModule } from '@ngrx/store';
+import { reducer } from './store/reducers';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ProductsListComponent } from './components/products-list/products-list.
     CommonModule,
     ProductsRouterModule,
     SharedModule,
+    StoreModule.forFeature('productsState', reducer)
   ]
 })
 export class ProductsModule { }
