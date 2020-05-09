@@ -1,0 +1,11 @@
+<app-site-head>
+    <h2 class="title text-black">Products</h2>
+    <div class="options">
+        <button class="btn btn-outline-primary" [routerLink]="['/orders/new']">Add Product</button>
+    </div>
+</app-site-head>
+
+<div class="default-column-layout product">
+    <app-products-filter></app-products-filter>
+    <app-products-list></app-products-list>
+</div>

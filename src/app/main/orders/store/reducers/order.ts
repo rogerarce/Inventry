@@ -15,7 +15,7 @@ export interface OrdersState {
 export const initialState: OrdersState = {
   data: [],
   filters: {
-    status: 'cancel',
+    status: 'all',
   }
 };
 

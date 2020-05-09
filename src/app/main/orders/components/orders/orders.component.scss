@@ -1,15 +1,1 @@
-.orders {
-    height: calc(100vh - 124px);
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    grid-column-gap: 10px;
-
-}
-
-.actions, .contents {
-    padding: 24px;
-}
-
-.actions {
-    border-right: 1px solid #ddd;
-}
+@import '../../../../../assets/scss/inventry.scss';

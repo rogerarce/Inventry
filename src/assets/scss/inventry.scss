@@ -8,3 +8,20 @@
     text-transform: uppercase;
     letter-spacing: 0.02em;
 }
+
+.default-column-layout {
+    height: calc(100vh - 124px);
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-column-gap: 10px;
+}
+
+.actions {
+    height: 100%;
+    padding: $padded-default;
+    border-right: 1px solid #ddd;
+}
+
+.content {
+    padding: $padded-default;
+}

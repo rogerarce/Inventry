@@ -13,6 +13,7 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { reducers, metaReducers } from './store/reducers';
 import { environment } from 'src/environments/environment';
+import { ProductsModule } from './main/products/products.module';
 
 @NgModule({
   declarations: [
@@ -24,14 +25,17 @@ import { environment } from 'src/environments/environment';
     BrowserModule,
     RouterModule,
     LayoutsModule,
-    PublicModule,
-    OrdersModule,
-    AppRouting,
+
     StoreModule.forRoot(reducers, {metaReducers}),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production,
     }),
+
+    PublicModule,
+    ProductsModule,
+    OrdersModule,
+    AppRouting,
   ],
   providers: [],
   bootstrap: [AppComponent]
