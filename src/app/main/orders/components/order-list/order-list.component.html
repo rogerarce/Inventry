@@ -1,0 +1,39 @@
+<div class="contents">
+    <table class="table border bg-white">
+        <thead class="bg-gray">
+            <tr>
+                <th>Order Number</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Customer</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <ng-container *ngFor="let order of (orders | async)">
+                <tr>
+                    <td>
+                        <a href="">#{{order.order_id}}</a>
+                    </td>
+                    <td>{{order.product.name}}</td>
+                    <td>{{order.quantity}}</td>
+                    <td>{{order.total | currency}}</td>
+                    <td></td>
+                    <td>
+                        <div [ngSwitch]="order.status">
+                            <span *ngSwitchCase="'pending'" class="badge badge-warning">pending</span>
+                            <span *ngSwitchCase="'completed'" class="badge badge-success">completed</span>
+                            <span *ngSwitchCase="'onhold'" class="badge badge-default">on-hold</span>
+                            <span *ngSwitchCase="'cancel'" class="badge badge-danger">cancel</span>
+                            <div *ngSwitchDefault>output2</div>
+                        </div>
+                    </td>
+                    <td>{{order.created_at | date: 'mediumDate'}}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

@@ -6,6 +6,7 @@ $danger: #9d2503;
 $default: #F3F3F4;
 $gray: #e8e8e9;
 $dark-gray: #707074;
+$black: #333;
 
 // Default Override
 $border-radius: .15rem;
@@ -36,6 +37,7 @@ $theme-colors: (
     "danger": $danger,
     "gray": $gray,
     "dark-gray": $dark-gray,
+    "black": $black,
 );
 
 thead th {

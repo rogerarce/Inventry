@@ -1,0 +1,10 @@
+@import './variables.scss';
+
+.text-label {
+    font-weight: $fw-bold;
+    font-size: $form-label-font-size;
+    color: #707074;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}

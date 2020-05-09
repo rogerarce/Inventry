@@ -1,0 +1,11 @@
+<app-site-head>
+    <h2 class="title text-black">Orders</h2>
+    <div class="options">
+        <button class="btn btn-outline-primary" [routerLink]="['/orders/new']">Add Order</button>
+    </div>
+</app-site-head>
+
+<div class="orders">
+    <app-order-filters></app-order-filters>
+    <app-order-list [orders]="$orders"></app-order-list>
+</div>
