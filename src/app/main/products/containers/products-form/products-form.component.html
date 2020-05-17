@@ -1,0 +1,54 @@
+<app-site-head>
+    <h2 class="title text-black">New Product</h2>
+</app-site-head>
+
+<div class="default-form-layout">
+    <form [formGroup]="form" (ngSubmit)="addProduct(form)">
+
+        <div class="card w-50">
+            <div class="card-header bg-white">
+                <b>Product Information</b>
+            </div>
+
+            <div class="card-body">
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" formControlName="name">
+                    </div>
+
+                    <div class="col">
+                        <label for="price">Price</label>
+                        <input type="text" class="form-control" formControlName="price">
+                    </div>
+                </div>
+
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <label for="category">Category</label>
+                        <select name="category" class="form-control" formControlName="category">
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="status">Status</label>
+                        <input type="text" class="form-control" formControlName="status">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" class="form-control" formControlName="description">
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <button type="submit" class="btn btn-primary mr-2">Add Product</button>
+            <button class="btn btn-defauly" [routerLink]="['/products']">Cancel</button>
+        </div>
+
+    </form>
+</div>
