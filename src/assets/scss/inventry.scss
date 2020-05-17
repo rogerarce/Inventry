@@ -9,11 +9,26 @@
     letter-spacing: 0.02em;
 }
 
+// Layout Styling
 .default-column-layout {
     height: calc(100vh - 124px);
     display: grid;
     grid-template-columns: 20% 1fr;
     grid-column-gap: 10px;
+}
+
+.equal-column-layout {
+    height: calc(100vh - 124px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 10px;
+}
+
+// Form Layout
+.default-form-layout {
+    height: 100%;
+    padding: $padded-default;
+    box-sizing: border-box;
 }
 
 .actions {

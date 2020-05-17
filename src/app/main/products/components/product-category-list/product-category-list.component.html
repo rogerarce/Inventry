@@ -1,0 +1,23 @@
+<div class="content">
+    <table class="table border bg-white">
+        <thead class="bg-gray">
+            <tr>
+                <th>Category Name</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <ng-container *ngFor="let category of categories">
+                <tr>
+                    <td>{{category.name}}</td>
+                    <td>{{category.description}}</td>
+                    <td>{{category.status}}</td>
+                    <td></td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

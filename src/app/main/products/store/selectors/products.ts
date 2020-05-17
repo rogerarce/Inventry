@@ -10,5 +10,5 @@ export const productState = (state: AppState) => state.productState.products;
 
 export const productSelector = createSelector(
   productState,
-  (state: ProductsState) => state.data
+  (state: ProductsState) => state.products
 );

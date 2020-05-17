@@ -1,0 +1,10 @@
+<app-site-head>
+    <h2 class="title text-black">Products Category</h2>
+    <div class="options">
+        <button class="btn btn-outline-primary" [routerLink]="['/products/category/new']">Add Product Category</button>
+    </div>
+</app-site-head>
+
+<div class="equal-column-layout category">
+    <app-product-category-list [categories]="categories$ | async"></app-product-category-list>
+</div>
