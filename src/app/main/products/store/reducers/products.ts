@@ -13,7 +13,12 @@ export interface ProductsState {
 
 export const initialState: ProductsState = {
   products: [],
-  categories: [],
+  categories: [{
+    product_category_id: '1',
+    name: 'sample',
+    description: 'sample category description',
+    status: 'active',
+  }],
 };
 
 export const reducer = (
