@@ -4,6 +4,7 @@ export interface Product {
   price: number;
   description: string;
   category: string;
+  status: string;
   created_at: Date;
   updated_at: Date;
 }
@@ -11,5 +12,14 @@ export interface Product {
 export type Products = Product[];
 
 export class ProductModel {
-  constructor(product: Product) {}
+  constructor(
+    public product_id: string,
+    public name: string,
+    public price: number,
+    public description: string,
+    public category: string,
+    public status: string,
+    public created_at: Date | string,
+    public updated_at: Date | string,
+  ) {}
 }

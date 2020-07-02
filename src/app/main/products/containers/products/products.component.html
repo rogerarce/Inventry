@@ -7,5 +7,5 @@
 
 <div class="default-column-layout product">
     <app-products-filter></app-products-filter>
-    <app-products-list></app-products-list>
+    <app-products-list [products]="products$ | async"></app-products-list>
 </div>

@@ -3,12 +3,12 @@ import { ProductState } from '../reducers/index';
 import { ProductsState } from '../reducers/products';
 
 export interface AppState {
-  productState: ProductState;
+  productsState: ProductState;
 }
 
-export const productState = (state: AppState) => state.productState.products;
+export const productState = (state: AppState) => state.productsState.products;
 
 export const productSelector = createSelector(
   productState,
-  (state: ProductsState) => state.products
+  (state: ProductsState) => state.products,
 );
