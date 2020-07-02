@@ -8,5 +8,10 @@ export interface ProductCategory {
 export type ProductCategories = ProductCategory[];
 
 export class ProductCategoryModel {
-  constructor(productCategory: ProductCategory) {}
+  constructor(
+    public product_category_id: string,
+    public name: string,
+    public description: string,
+    public status: string,
+  ) {}
 }
