@@ -4,12 +4,8 @@ import { ThemeComponent } from './main/theme/theme.component';
 
 const routes: Routes = [
   {
-    path: 'theme',
-    component: ThemeComponent,
-  },
-  {
     path: '',
-    redirectTo: 'theme',
+    redirectTo: 'login',
     pathMatch: 'full'
   }
 ];

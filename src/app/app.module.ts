@@ -2,9 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ThemeComponent } from './main/theme/theme.component';
 import { AppRouting } from './app-routing.module';
-import { LoginComponent } from './main/public/login/login.component';
 import { PublicModule } from './main/public/public.module';
 import { LayoutsModule } from './layouts/layouts.module';
 import { RouterModule } from '@angular/router';
@@ -16,22 +14,16 @@ import { environment } from 'src/environments/environment';
 import { ProductsModule } from './main/products/products.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ThemeComponent,
-    LoginComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     RouterModule,
     LayoutsModule,
-
     StoreModule.forRoot(reducers, {metaReducers}),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production,
     }),
-
     PublicModule,
     ProductsModule,
     OrdersModule,

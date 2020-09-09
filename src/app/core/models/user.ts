@@ -14,5 +14,15 @@ export interface IUser {
 export type Users = IUser[];
 
 export class User {
-  constructor(user: IUser) {}
+  created_at: Date;
+  updated_at: Date;
+
+  constructor(
+    public user_id: string,
+    public firstname: string,
+    public lastname: string,
+    public email: string,
+    public phone_number: string,
+    public type: UserType,
+  ) {}
 }

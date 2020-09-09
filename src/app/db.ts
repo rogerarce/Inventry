@@ -10,6 +10,7 @@ export const product: Products = [
     category: '',
     created_at: new Date(),
     updated_at: new Date(),
+    status: '',
   },
   {
     product_id: '2',
@@ -19,6 +20,7 @@ export const product: Products = [
     category: '',
     created_at: new Date(),
     updated_at: new Date(),
+    status: '',
   },
   {
     product_id: '3',
@@ -28,6 +30,7 @@ export const product: Products = [
     category: '',
     created_at: new Date(),
     updated_at: new Date(),
+    status: '',
   },
   {
     product_id: '4',
@@ -37,6 +40,7 @@ export const product: Products = [
     category: '',
     created_at: new Date(),
     updated_at: new Date(),
+    status: '',
   }
 ];
 
@@ -54,6 +58,7 @@ export const orders: Orders = [
       category: '',
       created_at: new Date(),
       updated_at: new Date(),
+      status: '',
     },
     created_at: new Date(),
     updated_at: new Date()
@@ -71,6 +76,7 @@ export const orders: Orders = [
       category: '',
       created_at: new Date(),
       updated_at: new Date(),
+      status: '',
     },
     created_at: new Date(),
     updated_at: new Date()
@@ -88,6 +94,7 @@ export const orders: Orders = [
       category: '',
       created_at: new Date(),
       updated_at: new Date(),
+      status: '',
     },
     created_at: new Date(),
     updated_at: new Date()
@@ -105,6 +112,7 @@ export const orders: Orders = [
       category: '',
       created_at: new Date(),
       updated_at: new Date(),
+      status: '',
     },
     created_at: new Date(),
     updated_at: new Date()
