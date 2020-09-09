@@ -12,7 +12,16 @@ export interface ProductsState {
 }
 
 export const initialState: ProductsState = {
-  products: [],
+  products: [{
+    product_id: '1',
+    name: 'Skinness',
+    description: 'sample product',
+    price: 200.00,
+    category: 'sample',
+    status: 'active',
+    created_at: new Date(),
+    updated_at: new Date(),
+  }],
   categories: [{
     product_category_id: '1',
     name: 'sample',

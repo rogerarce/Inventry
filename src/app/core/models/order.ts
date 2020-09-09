@@ -6,8 +6,8 @@ export interface Order {
   order_id: string;
   quantity: number;
   total: number;
-  status: OrderStatus;
-  product: Product;
+  status?: OrderStatus;
+  product?: Product;
   created_at: Date;
   updated_at: Date;
 }

@@ -1,7 +1,7 @@
-<ng-container *ngIf="false">
+<ng-container *ngIf="!authenticated">
     <app-public-layout></app-public-layout>
 </ng-container>
 
-<ng-container *ngIf="true">
+<ng-container *ngIf="authenticated">
     <app-protected-layout></app-protected-layout>
 </ng-container>
