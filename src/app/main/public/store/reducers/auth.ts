@@ -14,11 +14,10 @@ export const initialState: AuthStates = {
 export const reducer = (
   state = initialState,
   actions: AuthActionsType
-) => {
- 
+) => { 
   switch(actions.type) {
     case AuthActions.LOGIN:
-      return {...state, user: state.user, isAuthenticated: true};
+      return {...state, user: actions.user, isAuthenticated: true};
     case AuthActions.LOGOUT:
       return {...state, user: null, isAuthenticated: false};
     default:

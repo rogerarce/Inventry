@@ -25,4 +25,8 @@ export class User {
     public phone_number: string,
     public type: UserType,
   ) {}
+
+  get fullName() {
+    return `${this.firstname} ${this.lastname}`;
+  }
 }

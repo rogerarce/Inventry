@@ -1,5 +1,6 @@
 import { Orders } from './core/models/order';
 import { Products } from './core/models/product';
+import { User } from './core/models/user';
 
 export const product: Products = [
   {
@@ -118,3 +119,12 @@ export const orders: Orders = [
     updated_at: new Date()
   }
 ];
+
+export const user = new User(
+  '1',
+  'admin',
+  'admin',
+  'test@admin.com',
+  '12313123123123',
+  'admin'
+);

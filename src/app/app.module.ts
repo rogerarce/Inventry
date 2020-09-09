@@ -12,6 +12,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { reducers, metaReducers } from './store/reducers';
 import { environment } from 'src/environments/environment';
 import { ProductsModule } from './main/products/products.module';
+import { InventoryModule } from './main/inventory/inventory.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,6 +28,7 @@ import { ProductsModule } from './main/products/products.module';
     PublicModule,
     ProductsModule,
     OrdersModule,
+    InventoryModule,
     AppRouting,
   ],
   providers: [],
