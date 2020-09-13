@@ -1,3 +1,4 @@
+import { Inventories } from './core/models/inventory';
 import { Orders } from './core/models/order';
 import { Products } from './core/models/product';
 import { User } from './core/models/user';
@@ -117,6 +118,73 @@ export const orders: Orders = [
     },
     created_at: new Date(),
     updated_at: new Date()
+  }
+];
+
+export const inventory: Inventories = [
+  {
+    id: '1',
+    remaining_stock: 1000,
+    threshold: 200,
+    total: 10000,
+    product: {
+      product_id: '2',
+      name: 'Bamboo Charcoal',
+      price: 120.00,
+      description: 'lorem ipsum',
+      category: '',
+      created_at: new Date(),
+      updated_at: new Date(),
+      status: '',
+    },
+  },
+  {
+    id: '2',
+    remaining_stock: 1000,
+    threshold: 200,
+    total: 10000,
+    product: {
+      product_id: '2',
+      name: 'Skinness Soup',
+      price: 100.00,
+      description: 'lorem ipsum',
+      category: '',
+      created_at: new Date(),
+      updated_at: new Date(),
+      status: '',
+    },
+  },
+  {
+    id: '3',
+    remaining_stock: 1000,
+    threshold: 200,
+    total: 10000,
+    product: {
+      product_id: '3',
+      name: 'Skinnes chicken skin soup',
+      price: 1100.00,
+      description: 'lorem ipsum',
+      category: '',
+      created_at: new Date(),
+      updated_at: new Date(),
+      status: '',
+    },
+  },
+  {
+    id: '4',
+    remaining_stock: 1000,
+    threshold: 200,
+    total: 10000,
+    product: {
+      product_id: '4',
+      name: 'Skinnes chicken skin soup',
+      price: 1000.00,
+      description: 'lorem ipsum',
+      category: '',
+      created_at: new Date(),
+      updated_at: new Date(),
+      status: '',
+    },
   }
 ];
 

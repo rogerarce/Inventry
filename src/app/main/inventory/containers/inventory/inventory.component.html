@@ -1,9 +1,8 @@
 <app-site-head>
     <h2 class="title text-black">Inventory</h2>
-    <div class="options">
-        <button class="btn btn-outline-primary" [routerLink]="['/inventory/new']">Add Item</button>
-    </div>
 </app-site-head>
 
-<div class="default-column-layout orders">
+<div class="default-column-layout inventory">
+    <app-inventory-filters></app-inventory-filters>
+    <app-inventory-list [inventories]="$inventories"></app-inventory-list>
 </div>

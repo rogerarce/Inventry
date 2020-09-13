@@ -1,1 +1,23 @@
-<p>inventory-list works!</p>
+<div class="content">
+    <table class="table border bg-white">
+        <thead class="bg-gray">
+            <tr>
+                <th>Product Name</th>
+                <th>Total Stocks</th>
+                <th>Product Threshold</th>
+                <th>Remaining Stocks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <ng-container *ngFor="let inventory of (inventories | async)">
+                <tr>
+                    <td><a [routerLink]="['/inventory', inventory.product.product_id, 'details']">{{inventory.product.name}}</a></td>
+                    <td>{{inventory.total}}</td>
+                    <td>{{inventory.threshold}}</td>
+                    <td>{{inventory.remaining_stock}}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,13 @@
+<app-site-head>
+    <h2 class="title text-black">Product Transaction Details</h2>
+    <div class="options">
+        <button class="btn btn-outline-primary">Add Product Stock</button>
+    </div>
+</app-site-head>
+
+<div class="equal-column-layout inventory-details">
+    <div>
+        <app-product-detail [product]="product"></app-product-detail>
+        <app-product-transaction-history></app-product-transaction-history>
+    </div> <!-- first column -->
+</div>

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import { LoadProduct } from '../../store/actions';
 import { productSelector } from '../../store/selectors/products';
+import { product } from '../../../../db';
 
 @Component({
   selector: 'app-products',
@@ -15,6 +17,8 @@ export class ProductsComponent implements OnInit {
   constructor(private store: Store<any>) { }
 
   ngOnInit() {
+    this.store.dispatch(new LoadProduct(product));
+
     this.products$ = this.store.pipe(select(productSelector));
   }
 
